@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PDF to Word Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PDF to Word Converter</h1>
+  <p>Use this tool to convert your PDF files to editable Word documents.</p>
+  <form action="convert.php" method="post" enctype="multipart/form-data">
+    <label for="pdf-file">Select PDF file:</label><br>
+    <input type="file" name="pdf-file" id="pdf-file" accept=".pdf"><br>
+    <input type="submit" value="Convert">
+  </form>
+  <div id="conversion-status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
